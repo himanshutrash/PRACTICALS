@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moving Box Animation</title>
+  <style>
+    body {
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      position: relative;
+      border-radius: 10px;
+      animation: moveBox 3s linear infinite;
+    }
+
+    @keyframes moveBox {
+      0%   { left: 0; }
+      50%  { left: 300px; }
+      100% { left: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box"></div>
+
+</body>
+</html>
